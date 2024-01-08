@@ -1,1 +1,1 @@
-ls -tmp
+ls -mup | tr -d " "

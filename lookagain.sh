@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name "*.sh" |rev|cut -d '/' -f0|rev|cut -d '.' -f1
+find -name "*.sh" -printf "%f\n" | cut -d "/" -f1 | cut -d "." -f1

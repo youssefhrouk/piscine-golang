@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "FirstNameOfWitness LastNameOfWitness"
-echo "123456"
-echo "Red Ferrari"
-echo "FirstNameOfSuspect1 LastNameOfSuspect1"
-echo "FirstNameOfSuspect2 LastNameOfSuspect2"
-echo "FirstNameOfSuspect3 LastNameOfSuspect3"
+echo "John Doe"
+echo "789012"
+echo "Blue Toyota"
+echo "Alice Smith"
+echo "Bob Johnson"
+echo "Charlie Brown"

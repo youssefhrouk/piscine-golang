@@ -1,9 +1,7 @@
 package piscine
 
-import (
-	"piscine"
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
+
 func MyFun(nb int) {
 	c := '0'
 	if nb == 0 {

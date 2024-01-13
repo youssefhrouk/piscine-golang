@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func SortIntegerTable(table []int) {
 	for i := 0; i < len(table); i++ {
@@ -12,8 +10,8 @@ func SortIntegerTable(table []int) {
 	}
 }
 
-func main() {
-	s := []int{5, 4, 3, 2, 1, 0}
-	SortIntegerTable(s)
-	fmt.Println(s)
-}
+// func main() {
+// 	s := []int{5, 4, 3, 2, 1, 0}
+// 	SortIntegerTable(s)
+// 	fmt.Println(s)
+// }

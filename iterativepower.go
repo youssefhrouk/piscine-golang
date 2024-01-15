@@ -12,5 +12,6 @@ func IterativePower(nb int, power int) int {
 }
 
 /* func main() {
- 	fmt.Println(IterativePower(4, 2))
- }
+	fmt.Println(IterativePower(4, 2))
+}
+*/

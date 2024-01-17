@@ -12,7 +12,7 @@ func PrintNbrInOrder(n int) {
 
 	digitCounts := [10]int{}
 
-	for n != 0 {
+	for n > 0 {
 		digit := n % 10
 		digitCounts[digit]++
 		n /= 10

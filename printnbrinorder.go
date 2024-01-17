@@ -23,6 +23,4 @@ func PrintNbrInOrder(n int) {
 			count--
 		}
 	}
-
-	z01.PrintRune('\n')
 }

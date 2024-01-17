@@ -1,4 +1,4 @@
-package piscine
+package main
 
 import "github.com/01-edu/z01"
 
@@ -23,4 +23,10 @@ func PrintNbrInOrder(n int) {
 			count--
 		}
 	}
+}
+
+func main() {
+	PrintNbrInOrder(321)
+	PrintNbrInOrder(0)
+	PrintNbrInOrder(321)
 }

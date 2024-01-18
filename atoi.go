@@ -1,4 +1,4 @@
-package piscine
+package student
 
 func Atoi(s string) int {
 	rslt := 0

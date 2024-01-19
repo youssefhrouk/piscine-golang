@@ -1,7 +1,5 @@
 package piscine
 
-import "fmt"
-
 func Join(strs []string, sep string) string {
 	str := ""
 	for i := range strs {

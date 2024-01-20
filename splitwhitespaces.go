@@ -1,25 +1,20 @@
 package piscine
 
+func isWhitespace(c byte) bool {
+	return c == ' ' || c == '\t' || c == '\n'
+}
+
 func SplitWhiteSpaces(s string) []string {
-	var res []string
-	var Currentmot string
+	var result []string
+	index := 0
 
-	for i := 0; i < len(s); i++ {
-		str := s[i]
-
-		if str == ' ' || str == '\t' || str == '\n' || str == '\r' {
-			if Currentmot != "" {
-				res = append(res, Currentmot)
-				Currentmot = ""
+	for i := 0; i <= len(s); i++ {
+		if i == len(s) || isWhitespace(s[i]) {
+			if i > index {
+				result = append(result, s[index:i])
 			}
-		} else {
-			Currentmot += string(str)
+			index = i + 1
 		}
 	}
-
-	if Currentmot != "" {
-		res = append(res, Currentmot)
-	}
-
-	return res
+	return result
 }

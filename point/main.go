@@ -1,6 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"github.com/01-edu/z01"
+)
+
+func PrintNbr(nb int) {
+	c := '0'
+	if nb == 0 {
+		z01.PrintRune(c)
+		return
+	}
+	for i := 1; i <= nb%10; i++ {
+		c++
+	}
+	if nb/10 != 0 {
+		PrintNbr(nb / 10)
+	}
+	z01.PrintRune(c)
+}
 
 type point struct {
 	x, y int
@@ -12,9 +29,18 @@ func setPoint(ptr *point) {
 }
 
 func main() {
-	points := point{}
+	points := &point{}
 
-	setPoint(&points)
-
-	fmt.Printf("x = %d, y = %d\n", points.x, points.y)
+	setPoint(points)
+	sr := "x = "
+	for _, i := range sr {
+		z01.PrintRune(i)
+	}
+	PrintNbr(points.x)
+	srt := ", y = "
+	for _, j := range srt {
+		z01.PrintRune(j)
+	}
+	PrintNbr(points.y)
+	z01.PrintRune('\n')
 }

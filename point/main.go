@@ -6,10 +6,7 @@ import (
 
 func PrintNbr(nb int) {
 	c := '0'
-	if nb == 0 {
-		z01.PrintRune(c)
-		return
-	}
+
 	for i := 1; i <= nb%10; i++ {
 		c++
 	}

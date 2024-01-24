@@ -1,4 +1,6 @@
-package piscine
+package main
+
+import "fmt"
 
 func DescendAppendRange(max, min int) []int {
 	var slice []int
@@ -9,4 +11,9 @@ func DescendAppendRange(max, min int) []int {
 		slice = append(slice, i)
 	}
 	return slice
+}
+
+func main() {
+	fmt.Println(DescendAppendRange(0, 1))
+	fmt.Println(DescendAppendRange(5, 10))
 }

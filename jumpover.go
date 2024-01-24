@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func JumpOver(str string) string {
 	st := " "
@@ -13,11 +11,4 @@ func JumpOver(str string) string {
 	}
 	st += "\n"
 	return st
-}
-
-func main() {
-	fmt.Print(JumpOver("1010101010"))
-	fmt.Print(JumpOver(""))
-	fmt.Print(JumpOver("t w e l v e"))
-	fmt.Print(JumpOver("12"))
 }

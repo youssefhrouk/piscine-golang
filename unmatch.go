@@ -1,4 +1,4 @@
-package main
+package piscine
 
 func Unmatch(a []int) int {
 	var found int

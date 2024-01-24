@@ -1,20 +1,17 @@
-package piscine
+package main
 
 func Unmatch(a []int) int {
-	index := 0
-
-	for i, v := range a {
-		ismatch := false
-		for j, w := range a {
-			if i != j && v == w {
-				ismatch = true
-				break
+	var found int
+	for _, v := range a {
+		found = 0
+		for _, z := range a {
+			if v == z {
+				found++
 			}
 		}
-		if !ismatch {
-			index = v
-			break
+		if found%2 != 0 {
+			return v
 		}
 	}
-	return index
+	return -1
 }

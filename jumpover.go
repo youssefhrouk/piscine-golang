@@ -1,7 +1,7 @@
 package piscine
 
 func JumpOver(str string) string {
-	st := " "
+	st := ""
 
 	if len(str) == 0 || len(str) < 3 {
 		return "\n"

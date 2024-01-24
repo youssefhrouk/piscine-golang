@@ -1,4 +1,4 @@
-package main
+package piscine
 
 func toLower(char byte) byte {
 	if 'A' <= char && char <= 'Z' {

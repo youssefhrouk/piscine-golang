@@ -1,9 +1,8 @@
 package piscine
 
 func StringToIntSlice(str string) []int {
-	st := []rune(str)
 	nbr := []int{}
-	for _, v := range st {
+	for _, v := range str {
 		nbr = append(nbr, int(v))
 	}
 

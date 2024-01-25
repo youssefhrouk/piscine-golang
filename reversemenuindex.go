@@ -1,11 +1,13 @@
 package piscine
 
 func ReverseMenuIndex(menu []string) []string {
-	length := len(menu)
-
-	for i := 0; i < length/2; i++ {
-		menu[i], menu[length-i-1] = menu[length-i-1], menu[i]
+	n := len(menu)
+	if menu == nil || len(menu) <= 0 {
+		return nil
 	}
-
-	return menu
+	reversedMenu := make([]string, n)
+	for i := 0; i < n; i++ {
+		reversedMenu[i] = menu[n-i-1]
+	}
+	return reversedMenu
 }

@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func RockAndRoll(n int) string {
 	if n%2 == 0 && n%3 == 0 {
@@ -16,8 +14,3 @@ func RockAndRoll(n int) string {
 	}
 }
 
-func main() {
-	fmt.Println(RockAndRoll(4))
-	fmt.Println(RockAndRoll(9))
-	fmt.Println(RockAndRoll(6))
-}

@@ -23,4 +23,3 @@ func LoafOfBread(str string) string {
 
 	return res
 }
-

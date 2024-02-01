@@ -12,26 +12,6 @@ func BTreeMin(root *TreeNode) *TreeNode {
 	return BTreeMin(root.Left)
 }
 
-func BTreeApplyInorder(root *TreeNode, f func(...interface{}) (int, error)) {
-	if root != nil {
-		BTreeApplyInorder(root.Left, f)
-		f(root.Data)
-		BTreeApplyInorder(root.Right, f)
-	}
-}
-
-
-func BTreeSearchItem(root *TreeNode, elem string) *TreeNode {
-	if root == nil || root.Data == elem {
-		return root
-	}
-	if elem < root.Data {
-		return BTreeSearchItem(root.Left, elem)
-	}
-	return BTreeSearchItem(root.Right, elem)
-}
-
-
 func BTreeDeleteNode(root, node *TreeNode) *TreeNode {
 	if node == nil {
 		return root
